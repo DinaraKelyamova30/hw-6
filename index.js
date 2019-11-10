@@ -52,11 +52,6 @@ uiColor[0].style.width = '450px';
 uiColor[0].style.margin = 'auto';
 uiColor[0].style.padding = '30px';
 
-let liTag = document.getElementsByTagName('li');
-for(let i = 1; i<=liTag.length; i=i+2){
-    liTag[i].style.color = '#00e8b2';
-}
-
 let textStyle = document.getElementsByClassName('text');
 textStyle[0].style.width = '700px';
 textStyle[0].style.margin = 'auto';
@@ -64,3 +59,9 @@ textStyle[1].style.width = '700px';
 textStyle[1].style.margin = 'auto';
 textStyle[1].style.fontSize = '13px';
 textStyle[1].style.paddingTop = '20px';
+
+let liTag = document.getElementsByTagName('li');
+for(let i = 0; i<=liTag.length; i=i+2){
+    liTag[i].style.color = '#00e8b2';
+}
+
