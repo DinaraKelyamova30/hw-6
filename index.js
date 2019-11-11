@@ -26,7 +26,7 @@ links.style.paddingTop = '15px';
 
 const colorA = prompt('Write links color: red, green ...', '#8800ff');
 let aTeg = document.getElementsByTagName('a');
-for (let i = 0; i<aTeg.length; i++){
+for (let i = 0; i < aTeg.length; i++) {
     aTeg[i].style.color = colorA;
 }
 
@@ -60,8 +60,15 @@ textStyle[1].style.margin = 'auto';
 textStyle[1].style.fontSize = '13px';
 textStyle[1].style.paddingTop = '20px';
 
+
+const liChang = prompt('Write style for li: disc|circle|square ', 'square');
 let liTag = document.getElementsByTagName('li');
-for(let i = 0; i<=liTag.length; i=i+2){
-    liTag[i].style.color = '#00e8b2';
+for (let i = 0; i < liTag.length; i++) {
+    liTag[i].style.listStyleType = liChang;
 }
 
+
+let link1 = document.getElementById('link1');
+const linkType1 = prompt('Write your favorite web-page', 'football24.ua');
+link1.textContent = `${linkType1}`;
+link1.href = `https://${linkType1}`;
